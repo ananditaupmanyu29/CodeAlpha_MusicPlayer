@@ -1,3 +1,14 @@
+let audio = document.getElementById("audio");
+function playSong(){
+    if(audio) audio.play();
+}
+
+function nextSong(){
+}
+
+function prevSong(){
+}
+
 function setVolume(){
     let volumeBar = document.getElementById("volumeBar");
     if(audio && volumeBar){
@@ -20,3 +31,27 @@ if(audio){
         }
     });
 }
+
+//DARK MODE
+function toggleDarkMode(){
+    document.body.classList.toggle("dark-mode");
+
+    if(document.body.classList.contains("dark-mode")){
+        localStorage.setItem("theme","dark");
+    } else {
+        localStorage.setItem("theme","light");
+    }
+}
+
+window.addEventListener("load", function(){
+
+    if(localStorage.getItem("theme") === "dark"){
+        document.body.classList.add("dark-mode");
+    }
+
+    let toggle = document.getElementById("darkToggle");
+    if(toggle){
+        toggle.checked = (localStorage.getItem("theme") === "dark");
+    }
+
+});
