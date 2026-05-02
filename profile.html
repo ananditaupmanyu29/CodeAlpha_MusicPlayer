@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Navbar -->
+    <nav>
+        <div class="left-nav">
+            <a href="signin.html">Sign In</a>
+        </div>
+
+        <div class="center-nav">
+            <a href="index.html">Home</a>
+            <a href="play.html">Play Music</a>
+            <a href="artist.html">Artists</a>
+            <a href="recently.html">Recently Played</a>
+        </div>
+
+        <div class="right-nav">
+            <div class="settings-box">
+                <span>⚙</span>
+                <a href="settings.html">Settings</a>
+            </div>
+
+            <div class="notification-box">
+                <span>🔔</span>
+                <a href="notification.html">Notifications</a>
+            </div>
+
+            <div class="profile-box">
+                <img src="https://img.freepik.com/premium-vector/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-vector-illustration_561158-3485.jpg?semt=ais_hybrid&w=740&q=80">
+                <a href="profile.html">Profile</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-content">
+
+        <!-- LEFT SECTION -->
+        <div class="left-section">
+
+            <h1>My Profile</h1>
+            <br>
+
+            <div class="profile-card">
+
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/000/435/728/small/1404.i033.096.S.m003.c10.Headphones_grunge.jpg" class="profile-img">
+
+                <div class="profile-info">
+                    <p><strong>Name:</strong> Anandita Upmanyu</p>
+                    <p><strong>Email:</strong> ananditaupmanyu29@gmail.com</p>
+                    <p><strong>Phone:</strong> +91 82877 xxxxx</p>
+                </div>
+
+                <button class="logout-btn">Logout</button>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT SECTION (same player) -->
+        <div class="right-section">
+            <h2>🎵 Now Playing</h2>
+
+            <img class="now-img" src="https://picsum.photos/300/250">
+
+            <h3>Snowfall</h3>
+            <p>Oneheart</p>
+            <br>
+
+            <div class="music-controls">
+                <button>⏮</button>
+                <button>▶</button>
+                <button>⏭</button>
+            </div>
+
+            <div class="progress-line">
+                <span>0:48</span>
+                <input type="range">
+                <span>5:26</span>
+            </div>
+            <br>
+
+            <div class="progress-line">
+                <span>🔊</span>
+                <input type="range">
+                <span>100%</span>
+            </div>
+            <br>
+        </div>
+
+    </div>
+
+    <footer>
+        Profile Page | Designed by Anandita Upmanyu
+    </footer>
+
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
