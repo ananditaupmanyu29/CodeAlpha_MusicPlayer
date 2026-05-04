@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recently Played</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Navbar -->
+    <nav>
+        <div class="left-nav">
+            <a href="signin.html">Sign In</a>
+        </div>
+
+        <div class="center-nav">
+            <a href="index.html">Home</a>
+            <a href="play.html">Play Music</a>
+            <a href="artist.html">Artists</a>
+            <a href="recently.html">Recently Played</a>
+        </div>
+
+        <div class="right-nav">
+            <div class="settings-box">
+                <span>⚙</span>
+                <a href="settings.html">Settings</a>
+            </div>
+
+            <div class="notification-box">
+                <span>🔔</span>
+                <a href="notification.html">Notifications</a>
+            </div>
+
+            <div class="profile-box">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/000/435/728/small/1404.i033.096.S.m003.c10.Headphones_grunge.jpg">
+                <a href="profile.html">Profile</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-content">
+
+        <!-- LEFT SECTION -->
+        <div class="left-section">
+
+            <h2>Recently Played</h2>
+
+            <!-- Song List -->
+            <div class="playlist">
+
+                <div class="playlist-row">
+                    <img src="Images/6.png">
+                    <p class="song-name">Blinding Lights</p>
+                    <p class="artist-name">The Weeknd</p>
+                    <span class="duration">3:20</span>
+                </div>
+
+                <div class="playlist-row">
+                    <img src="Images/7.png">
+                    <p class="song-name">Gehra Hua</p>
+                    <p class="artist-name">Arijit Singh</p>
+                    <span class="duration">6:02</span>
+                </div>
+
+                <div class="playlist-row">
+                    <img src="Images/8.png">
+                    <p class="song-name">Perfect</p>
+                    <p class="artist-name">Ed Sheeran</p>
+                    <span class="duration">3:45</span>
+                </div>
+
+                <div class="playlist-row">
+                    <img src="Images/9.png">
+                    <p class="song-name">Ishq Hai</p>
+                    <p class="artist-name">Anurag Saikia</p>
+                    <span class="duration">5:13</span>
+                </div>
+
+                <div class="playlist-row">
+                    <img src="Images/10.png">
+                    <p class="song-name">Shape of You</p>
+                    <p class="artist-name">Ed Sheeran</p>
+                    <span class="duration">4:02</span>
+                </div>
+
+                <div class="playlist-row">
+                    <img src="Images/11.png">
+                    <p class="song-name">Barbaad</p>
+                    <p class="artist-name">Jubin Nautiyal</p>
+                    <span class="duration">5:57</span>
+                </div>
+
+                <div class="playlist-row">
+                    <img src="Images/12.png">
+                    <p class="song-name">Wildest Dreams</p>
+                    <p class="artist-name">Taylor Swift</p>
+                    <span class="duration">3:40</span>
+                </div>
+
+                <div class="playlist-row">
+                    <img src="Images/13.png">
+                    <p class="song-name">Bairan</p>
+                    <p class="artist-name">Banjaare</p>
+                    <span class="duration">2:30</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT SECTION (same as your player) -->
+        <!-- Right Section -->
+        <div class="right-section">
+            <h2>🎵 Now Playing</h2>
+
+            <img class="now-img" src="https://picsum.photos/300/250">
+
+            <h3>Snowfall</h3>
+            <p>Oneheart</p>
+
+<!-- Controls -->
+<div class="music-controls">
+    <button onclick="prevSong()">⏮</button>
+    <button onclick="playSong()">▶</button>
+    <button onclick="nextSong()">⏭</button>
+</div>
+
+<!-- Progress Bar -->
+   <div class="progress-line">
+        <span>0:48</span>
+        <input type="range" min="0" max="100" value="20">
+        <span>5:26</span>
+    </div>
+    <br>
+
+<!-- Volume -->
+<div class="progress-line">
+    <span>🔊</span>
+    <input type="range" id="volumeBar" value="50" min="0" max="100" onchange="setVolume()">
+    <span>100%</span>
+</div>
+<br>
+<p>Next In Queue</p>
+            <div class="mini-list">
+                <div class="mini-song">
+                    <img src="Images/1.png">
+                    <p>One Love</p>
+                </div>
+
+                <div class="mini-song">
+                    <img src="Images/2.png">
+                    <p>Photograph</p>
+                </div>
+            </div> 
+
+        </div> 
+
+    </div>
+
+    <footer>
+        Recently Played | Designed by Anandita Upmanyu
+    </footer>
+
+</div> 
+<script src="script.js"></script>
+</body>
+</html>
