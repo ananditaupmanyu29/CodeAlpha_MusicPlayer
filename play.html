@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Navbar -->
+    <nav>
+        <div class="left-nav">
+            <a href="signin.html">Sign In</a>
+        </div>
+
+        <div class="center-nav">
+            <span>🔍</span>
+            <a href="index.html">Home</a>
+            <a href="play.html">Play Music</a>
+            <a href="artist.html">Artists</a>
+            <a href="recently.html">Recently Played</a>
+        </div>
+
+        <div class="right-nav">
+            <div class="settings-box">
+                <span>⚙</span>
+                <a href="settings.html">Settings</a>
+            </div>
+
+            <div class="notification-box">
+                <span>🔔</span>
+                <a href="notification.html">Notifications</a>
+            </div>
+
+            <div class="profile-box">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/000/435/728/small/1404.i033.096.S.m003.c10.Headphones_grunge.jpg">
+                <a href="profile.html">Profile</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-content">
+
+        <!-- Left Section -->
+        <div class="left-section">
+
+            <!-- Banner -->
+            <div class="banner">
+                <div class="banner-text">
+                    <h5>CREATE PLAYLIST</h5>
+                    <h1>DIVINE MUSIC</h1>
+                    <p>Enjoy vivid emotions with this stunning music album.</p>
+                </div>
+            </div>
+
+            <!-- Popular Artists -->
+            <section>
+                <div class="section-title">
+                    <h2>Popular artists</h2>
+                    <a href="artist.html">All Artists</a>
+                </div>
+
+                <div class="artists">
+                    <div class="artists">
+                    <div class="artist-card">
+                        <img src="https://i.scdn.co/image/ab6761610000e5eb5ba2d75eb08a2d672f9b69b7">
+                        <p>Arijit Singh</p>
+                    </div>
+
+                    <div class="artist-card">
+                        <img src="https://showbi.ru/upload/2024/09/12/20240912172405-ec13d4d5.jpg">
+                        <p>Taylor Swift</p>
+                    </div>
+
+                    <div class="artist-card">
+                        <img src="https://c.saavncdn.com/artists/Shreya_Ghoshal_007_20241101074144_500x500.jpg">
+                        <p>Shreya Ghoshal</p>
+                    </div>
+
+                    <div class="artist-card">
+                        <img src="https://media.pitchfork.com/photos/592c55445e6ef95969326b55/2:1/w_2560%2Cc_limit/4e9fe179.jpg">
+                        <p>Ed Sheeran</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Recently Played -->
+            <section>
+                <div class="section-title">
+                    <h2>Recently Played</h2>
+                    <a href="recently.html">Recently Played</a>
+                </div>
+
+                <div class="song-list">
+                    <div class="song">
+                        <img src="https://picsum.photos/50?1">
+                        <p>Tu</p>
+                        <span>3:21</span>
+                    </div>
+
+                    <div class="song">
+                        <img src="https://picsum.photos/50?2">
+                        <p>Ehsaas</p>
+                        <span>2:29</span>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <h2>🎵 Now Playing</h2>
+
+            <img class="now-img" src="https://picsum.photos/300/250">
+
+            <h3>Snowfall</h3>
+<p>Oneheart</p>
+
+<!-- Controls -->
+<div class="music-controls">
+    <button onclick="prevSong()">⏮</button>
+    <button onclick="playSong()">▶</button>
+    <button onclick="nextSong()">⏭</button>
+</div>
+
+<!-- Progress Bar -->
+   <div class="progress-line">
+        <span>0:48</span>
+        <input type="range" min="0" max="100" value="20">
+        <span>5:26</span>
+    </div>
+    <br>
+
+<!-- Volume -->
+<div class="progress-line">
+    <span>🔊</span>
+    <input type="range" id="volumeBar" value="50" min="0" max="100" onchange="setVolume()">
+    <span>100%</span>
+</div>
+<br>
+<p>Next In Queue</p>
+            <div class="mini-list">
+                <div class="mini-song">
+                    <img src="Images/1.png">
+                    <p>One Love</p>
+                </div>
+
+                <div class="mini-song">
+                    <img src="Images/2.png">
+                    <p>Photograph</p>
+                </div>
+
+                <div class="mini-song">
+                    <img src="Images/3.png">
+                    <p>Boyfriend</p>
+                </div>
+
+                <div class="mini-song">
+                    <img src="Images/5.png">
+                    <p>Gehra Hua</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        <footer>
+            Your Personal Playlist | Designed by Anandita Upmanyu
+        </footer>
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
